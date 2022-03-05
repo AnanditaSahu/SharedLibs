@@ -12,7 +12,7 @@ def call(Map templateParams) {
         stages {
             stage('Demo'){
                 steps{
-                    trial("Anandita Sahu")
+                    trial(templateParams.name)
                     script{
                         calculator.add(templateParams.input1, params.input2)
                         calculator.sub(templateParams.input1, params.input2)
