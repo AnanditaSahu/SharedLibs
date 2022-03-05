@@ -7,7 +7,7 @@ def call(Map templateParams) {
     pipeline {
         agent any
         parameters {
-            string(name: 'input2', defaultValue: 10)
+            string(name: 'input2', type: integer, defaultValue: 10)
         }
         stages {
             stage('Demo'){
