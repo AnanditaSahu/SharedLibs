@@ -14,7 +14,6 @@ def call(Map templateParams) {
                 steps {
                     script {
                         echo "Parameter passed to pipeline: " + templateParams.someParam
-                        cat README.md
                     }
                 }
             }
